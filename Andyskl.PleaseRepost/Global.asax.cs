@@ -13,12 +13,7 @@ namespace Andyskl.PleaseRepost
         }
 
         public static void RegisterRoutes(RouteCollection routes)
-        {
-            routes.MapRoute(
-               "Authentication", // Route name
-               "Auth/", // URL with parameters
-               new { controller = "Auth", action = "Login", id = UrlParameter.Optional }, new[] { "Akelon.Works" } // Parameter defaults
-               );
+        {           
             routes.MapRoute(
                 "Main", // Route name
                 "{controller}/{action}/{id}", // URL with parameters
